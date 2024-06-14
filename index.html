@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Manga</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4/bootstrap-4.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <main>
+        <h1>Registro de Manga</h1>
+        <form id="manga-form">
+            <label for="rut">RUT</label>
+            <input type="text" id="rut" placeholder="RUT" required>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <label for="manga-solicitado">Manga que solicitó</label>
+            <input type="text" id="manga-solicitado" placeholder="Manga que solicitó" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+            <label for="fecha-salida">Fecha de salida del manga:</label>
+            <input type="date" id="fecha-salida" required>
+            <label for="fecha-entrega">Fecha de entrega:</label>
+            <input type="date" id="fecha-entrega" required>
+            <button type="submit">Registrar Manga</button>
+        </form>
+
+        <form id="edit-manga-form" style="display: none;">
+            <label for="edit-rut">RUT</label>
+            <input type="text" id="edit-rut" placeholder="RUT" required>
+            <label for="edit-nombre">Nombre</label>
+            <input type="text" id="edit-nombre" placeholder="Nombre" required>
+            <label for="edit-apellido">Apellido</label>
+            <input type="text" id="edit-apellido" placeholder="Apellido" required>
+            <label for="edit-manga-solicitado">Manga que solicitó</label>
+            <input type="text" id="edit-manga-solicitado" placeholder="Manga que solicitó" required>
+            <label for="edit-email">Email</label>
+            <input type="email" id="edit-email" placeholder="Email" required>
+            <label for="edit-fecha-salida">Fecha de salida del manga:</label>
+            <input type="date" id="edit-fecha-salida" required>
+            <label for="edit-fecha-entrega">Fecha de entrega:</label>
+            <input type="date" id="edit-fecha-entrega" required>
+            <button type="submit">Guardar Cambios</button>
+            <button type="button" id="cancel-edit">Cancelar</button>
+        </form>
+
+        <h2>Listado de Mangas</h2>
+        <ul id="manga-list"></ul>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
